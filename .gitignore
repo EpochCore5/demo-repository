@@ -49,3 +49,6 @@ node_modules/
 /tmp/
 *.tmp
 *.temp
+
+# Generated assets (should be created by CI/CD)
+assets/icons/
