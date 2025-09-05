@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, '3.10', 3.11]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings
+        flake8 . --count --exit-zero --max-complexity=10 --statistics
+    
+    - name: Format check with black
+      run: |
+        black --check .
+    
+    - name: Test with pytest
+      run: |
+        pytest tests/ -v --tb=short
+    
+    - name: Validate repository structure and configuration
+      run: |
+        python scripts/validate.py
+    
+    - name: Generate icons (validation)
+      run: |
+        python scripts/generate_icons.py
+        # Verify icons were generated
+        ls -la assets/icons/
+        # Check that all expected icons exist
+        test -f assets/icons/icon-16x16.png
+        test -f assets/icons/icon-32x32.png
+        test -f assets/icons/icon-64x64.png
+        test -f assets/icons/icon-128x128.png
+        test -f assets/icons/icon-256x256.png
+    
+    - name: Upload generated icons as artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: generated-icons-python-${{ matrix.python-version }}
+        path: assets/icons/
+        retention-days: 30
+
+    - name: Validate directory structure
+      run: |
+        # Ensure expected directory structure exists after all operations
+        test -d scripts
+        test -d tests
+        test -d assets/icons
+        test -f requirements.txt
+        test -f scripts/generate_icons.py
+        echo "✅ All directory structure validations passed"
