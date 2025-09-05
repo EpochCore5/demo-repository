@@ -1,0 +1,34 @@
+{
+  "agent_id": "epoch_failure_remediation_agent",
+  "name": "Failure_Remediation_Agent",
+  "role": "Failure Detection",
+  "status": "active",
+  "integrations": {},
+  "meshy_triggers": [
+    "FIVE_AND_GO",
+    "FOREST_BRIDGE",
+    "ROOT_OF_ROOTS"
+  ],
+  "glyph": {
+    "core": "⚡✶✷✦\n✧✩✪✫\n✬✭✮✯\n♆♇♁♃",
+    "mesh": "♄♅♈♉",
+    "files": {
+      "txt": "assets/glyphs/epoch_failure_remediation_agent.txt",
+      "md": "assets/glyphs/epoch_failure_remediation_agent.md"
+    }
+  },
+  "reports": {
+    "init_report": "/reports/epoch_failure_remediation_agent_init.json",
+    "activity_log": "/reports/epoch_failure_remediation_agent_log.jsonl"
+  },
+  "ledger": {
+    "capsule_id": "keccak256(epoch_failure_remediation_agent)",
+    "seal_hash": "",
+    "last_verified": "2025-09-05T03:32:38Z"
+  },
+  "covenant": [
+    "Timestamp → Log → Seal → Archive → Reinject",
+    "Recursive Autonomy",
+    "Governance Compliance"
+  ]
+}

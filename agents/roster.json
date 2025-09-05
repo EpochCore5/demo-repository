@@ -1,0 +1,32 @@
+[
+  {
+    "agent_id": "epoch_kpi_prediction_agent",
+    "name": "Kpi_Prediction_Agent",
+    "role": "Forecasting",
+    "status": "active"
+  },
+  {
+    "agent_id": "epoch_failure_remediation_agent",
+    "name": "Failure_Remediation_Agent",
+    "role": "Failure Detection",
+    "status": "active"
+  },
+  {
+    "agent_id": "epoch_portfolio_optimizer",
+    "name": "Portfolio_Optimizer",
+    "role": "Synergy Analysis",
+    "status": "active"
+  },
+  {
+    "agent_id": "epoch_agent_registry",
+    "name": "Agent_Registry",
+    "role": "Agent Tracking",
+    "status": "active"
+  },
+  {
+    "agent_id": "epoch_audit_evolution_manager",
+    "name": "Audit_Evolution_Manager",
+    "role": "Audit Logging",
+    "status": "active"
+  }
+]

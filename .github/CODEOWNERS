@@ -1,0 +1,41 @@
+# CODEOWNERS File
+
+# This file defines the code owners for different parts of the repository
+
+# Code owners will be automatically requested for review when someone
+
+# opens a pull request that modifies code they own
+
+## Default owners for everything in the repo
+
+*                   @EpochCore5/administrators
+
+# Security and governance files
+
+/docs/SECURITY.md    @EpochCore5/administrators @EpochCore5/security-team
+/.github/security-*  @EpochCore5/administrators @EpochCore5/security-team
+/secure_repo.sh      @EpochCore5/administrators @EpochCore5/security-team
+
+# Agent management system
+
+/flash_sync_agents.sh     @EpochCore5/core-developers
+/create_mesh_graph.sh     @EpochCore5/core-developers
+/import_agents.sh         @EpochCore5/core-developers
+/generate_sample_agents.sh @EpochCore5/core-developers
+/add_agent.ps1           @EpochCore5/administrators @EpochCore5/core-developers
+
+# EpochCore system
+
+/epochcore/              @EpochCore5/core-developers
+/run_epochcore.sh       @EpochCore5/core-developers
+
+# Agent manifests and data
+
+/agents/manifests/      @EpochCore5/agent-operators @EpochCore5/core-developers
+/assets/glyphs/         @EpochCore5/agent-operators
+/reports/               @EpochCore5/agent-operators @EpochCore5/auditors
+/ledger/                @EpochCore5/administrators @EpochCore5/auditors
+
+# Documentation
+
+/docs/                  @EpochCore5/administrators @EpochCore5/core-developers @EpochCore5/auditors

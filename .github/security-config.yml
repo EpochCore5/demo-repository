@@ -1,0 +1,52 @@
+# Agent Management Security Configurations
+
+# Configure security scanning for Agent Management System components
+# This will be used by the CI/CD pipelines and pre-commit hooks
+
+agent_security:
+  # Governance compliance checking
+  governance:
+    strict_mode: true
+    require_audit_trails: true
+    require_cryptographic_seals: true
+    require_manifest_validation: true
+  
+  # Data protection settings
+  data_protection:
+    encrypt_sensitive_fields: true
+    encrypt_algorithm: "AES-256-GCM"
+    salt_manifests: true
+    
+  # Authentication and authorization
+  auth:
+    require_2fa: true
+    require_signed_commits: true
+    token_expiry_days: 30
+    
+  # Audit settings
+  audit:
+    retain_logs_days: 365
+    immutable_storage: true
+    cryptographic_verification: true
+    
+  # Access control
+  access_control:
+    require_approval_for:
+      - agent_creation
+      - manifest_modification
+      - integration_changes
+      - governance_changes
+      
+  # CI/CD security
+  ci_security:
+    scan_dependencies: true
+    scan_secrets: true
+    scan_vulnerabilities: true
+    enforce_policy: true
+    
+  # EpochCore specific security
+  epochcore_security:
+    recursion_depth_limit: 3
+    require_governance_headers: true
+    validate_outputs: true
+    strict_compliance: true
