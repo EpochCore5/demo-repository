@@ -1,16 +1,38 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+# EpochCore5 Demo Repository
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+This repository demonstrates advanced Copilot coding agent automation with agent management tools.
 
 ## Copilot Coding Agent Onboarding
 
-This repository is now onboarded for Copilot coding agent automation.
+This repository is onboarded for Copilot coding agent automation with enhanced agent management.
 
 ### Impact Propagation Engine
+
 - See `impact_propagation_engine.py` for the core engine implementation.
 - Follow [Copilot coding agent best practices](https://gh.io/copilot-coding-agent-tips) for automation and recursive improvements.
 
-### Getting Started
-1. Review the engine class and extend as needed for your dependency analysis.
-2. Use Copilot coding agent to automate improvements and propagate fixes.
+### Agent Management Tools
+
+- **Agent Creation**: Use `add_agent.ps1` to add new agents with proper governance and audit trails.
+- **Flash Sync**: Run `flash_sync_agents.sh` to synchronize all agents and update their verification status.
+- **Mesh Graph**: Run `create_mesh_graph.sh` to generate relationship graphs between agents.
+
+### Usage
+
+#### Creating a New Agent
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\add_agent.ps1 -AgentId agent42 -AgentName "Revenue Amplifier" -Role "Sales Funnel Commander"
+```
+
+#### Synchronizing All Agents
+
+```bash
+./flash_sync_agents.sh [--force] [--verify] [--report]
+```
+
+#### Generating Agent Mesh Graphs
+
+```bash
+./create_mesh_graph.sh [--output json|dot] [--visualize]
+```
