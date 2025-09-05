@@ -1,0 +1,7 @@
+# Core dependencies for automation
+pytest>=7.0.0
+flake8>=5.0.0
+black>=22.0.0
+
+# Dependencies for icon generation
+Pillow>=9.0.0
