@@ -52,3 +52,7 @@ node_modules/
 
 # Generated assets (should be created by CI/CD)
 assets/icons/
+
+# Agent system temporary files
+impact_analysis.json
+temp_bundle_*

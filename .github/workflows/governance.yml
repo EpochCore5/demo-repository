@@ -1,0 +1,50 @@
+name: Governance
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Secrets scanning
+      run: |
+        # Basic secrets detection
+        if grep -r -i "password\|secret\|key\|token" --include="*.json" --include="*.yml" --include="*.ps1" .; then
+          echo "⚠️ Potential secrets detected. Please review."
+          exit 1
+        fi
+        echo "✅ No obvious secrets detected"
+    
+    - name: Agent manifest validation
+      run: |
+        # Validate agent manifests
+        for manifest in agents/manifests/*.json; do
+          if [ -f "$manifest" ]; then
+            echo "Validating $manifest"
+            if ! python -m json.tool "$manifest" > /dev/null; then
+              echo "❌ Invalid JSON in $manifest"
+              exit 1
+            fi
+          fi
+        done
+        echo "✅ All agent manifests are valid"
+    
+    - name: Ledger integrity check
+      run: |
+        # Check ledger integrity
+        if [ -f "ledger/ledger_main.jsonl" ]; then
+          echo "Checking ledger integrity..."
+          while read -r line; do
+            if ! echo "$line" | python -m json.tool > /dev/null; then
+              echo "❌ Invalid JSONL entry in ledger"
+              exit 1
+            fi
+          done < ledger/ledger_main.jsonl
+          echo "✅ Ledger integrity verified"
+        fi
