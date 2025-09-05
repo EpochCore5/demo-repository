@@ -7,11 +7,10 @@ the system to identify affected components and automation opportunities.
 """
 
 import json
-import os
 import re
 import hashlib
 from pathlib import Path
-from typing import Dict, List, Set, Optional, Tuple
+from typing import Dict, List, Set
 from dataclasses import dataclass, asdict
 from datetime import datetime
 
@@ -431,7 +430,8 @@ class ImpactPropagationEngine:
                         affected_component=next_id,
                         impact_type="cascading_dependency",
                         severity="low" if depth > 1 else "medium",
-                        description=f"{next_id} indirectly affected through {current_id}",
+                        description=f"{next_id} indirectly affected through "
+                        f"{current_id}",
                         automation_opportunity=self._has_automation_opportunity(
                             source_id, next_id
                         ),
@@ -507,7 +507,10 @@ class ImpactPropagationEngine:
     ) -> str:
         """Generate specific automation suggestions."""
         if source.type == "python" and "test" in target.name:
-            return f"Add automated test execution for {source.name} when {target.name} changes"
+            return (
+                f"Add automated test execution for {source.name} when "
+                f"{target.name} changes"
+            )
         elif source.type == "workflow" and target.type == "python":
             return f"Automate {target.name} execution in CI/CD pipeline"
         elif source.type == "documentation" and target.type == "python":

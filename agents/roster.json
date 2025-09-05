@@ -30,5 +30,13 @@
     "created_at": "2025-09-05T07:24:27.764Z",
     "manifest_path": "/home/runner/work/demo-repository/demo-repository/agents/manifests/bundle_test_manifest.json",
     "status": "active"
+  },
+  {
+    "agent_id": "demo_agent",
+    "agent_name": "Demo Agent",
+    "role": "Demonstration",
+    "created_at": "2025-09-05T07:25:54.201Z",
+    "manifest_path": "/home/runner/work/demo-repository/demo-repository/agents/manifests/demo_agent_manifest.json",
+    "status": "active"
   }
 ]
