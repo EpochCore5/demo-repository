@@ -18,6 +18,7 @@ This repository is onboarded for Copilot coding agent automation with enhanced a
 - **Mesh Graph**: Run `create_mesh_graph.sh` to generate relationship graphs between agents.
 - **Import Agents**: Use `import_agents.sh` to import agents from another repository.
 - **Generate Samples**: Run `generate_sample_agents.sh` to create sample agents for testing.
+- **EpochCore System**: Run `run_epochcore.sh` to execute the recursive agent system with governance compliance.
 
 ### Usage
 
@@ -49,4 +50,10 @@ powershell -ExecutionPolicy Bypass -File .\add_agent.ps1 -AgentId agent42 -Agent
 
 ```bash
 ./generate_sample_agents.sh [--count N] [--prefix string]
+```
+
+#### Running the EpochCore Agent System
+
+```bash
+./run_epochcore.sh [--agent registry|compliance|summary] [--sync]
 ```
