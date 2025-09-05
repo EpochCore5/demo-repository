@@ -1,0 +1,38 @@
+{
+  "agent_id": "bundle_test",
+  "agent_name": "Bundle Test Agent",
+  "role": "Testing Bundles",
+  "created_at": "2025-09-05T07:24:27.764Z",
+  "status": "initialized",
+  "integrations_available": [
+    "payments",
+    "analytics",
+    "crm",
+    "email",
+    "chat_support",
+    "social",
+    "devops_infra",
+    "data",
+    "ecommerce",
+    "governance",
+    "content_marketing"
+  ],
+  "governance": {
+    "governance_files_created": [
+      "CODEOWNERS",
+      "PULL_REQUEST_TEMPLATE.md",
+      "governance.yml"
+    ],
+    "mode": "strict",
+    "audit_enabled": true
+  },
+  "files_created": {
+    "manifest": "/home/runner/work/demo-repository/demo-repository/agents/manifests/bundle_test_manifest.json",
+    "init_report": "/home/runner/work/demo-repository/demo-repository/reports/bundle_test_init.json",
+    "bundle": "/home/runner/work/demo-repository/demo-repository/bundles/bundle_test_bundle.zip"
+  },
+  "checksums": {
+    "bundle_sha256": "BE48B4C79E27946DA7CD7EED4CCE92E9048E1A8087861D5CB8FB579901EAC070",
+    "manifest_sha256": "A7285C06FA0F2E866ADA5AA92A901E7B9DBF1460C71E73778B3E73B0D5136F56"
+  }
+}

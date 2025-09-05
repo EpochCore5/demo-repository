@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "agent_id": "test_agent2",
+    "agent_name": "Test Agent 2",
+    "role": "Testing System",
+    "created_at": "2025-09-05T07:22:45.090Z",
+    "version": "1.0.0",
+    "schema_version": "2024.1"
+  },
+  "integrations": {
+    "payments": [
+      "Stripe",
+      "PayPal",
+      "LemonSqueezy",
+      "Paddle",
+      "Square",
+      "Coinbase Commerce"
+    ],
+    "analytics": [
+      "GA4",
+      "PostHog",
+      "Mixpanel",
+      "Amplitude",
+      "Segment",
+      "Heap"
+    ],
+    "crm": [
+      "HubSpot",
+      "Salesforce",
+      "Pipedrive",
+      "Zoho",
+      "Monday CRM"
+    ],
+    "email": [
+      "Mailchimp",
+      "ConvertKit",
+      "SendGrid",
+      "Klaviyo",
+      "Amazon SES"
+    ],
+    "chat_support": [
+      "Intercom",
+      "Drift",
+      "Crisp",
+      "Zendesk",
+      "HelpScout"
+    ],
+    "social": [
+      "Twitter API",
+      "LinkedIn API",
+      "Reddit API",
+      "Facebook Graph"
+    ],
+    "devops_infra": [
+      "GitHub Actions",
+      "GitLab CI",
+      "CircleCI",
+      "ArgoCD"
+    ],
+    "data": [
+      "BigQuery",
+      "Snowflake",
+      "Redshift",
+      "ClickHouse",
+      "Airbyte"
+    ],
+    "ecommerce": [
+      "Shopify",
+      "WooCommerce",
+      "BigCommerce",
+      "Gumroad"
+    ],
+    "governance": [
+      "Multisig Vaults",
+      "On-chain Registry",
+      "Capsule Ledger"
+    ],
+    "content_marketing": [
+      "SEO Engine",
+      "Ads Automation",
+      "Content Pipeline"
+    ]
+  },
+  "config": {
+    "governance_mode": "strict",
+    "audit_trail": true,
+    "encryption": "aes256",
+    "backup_strategy": "incremental"
+  },
+  "reports": {
+    "activity_log": "/reports/test_agent2_log.jsonl",
+    "init_report": "/reports/test_agent2_init.json"
+  },
+  "ledger": {
+    "last_verified": "2025-09-05T07:22:45.090Z",
+    "seal_hash": "AA56E8735E683EC8D79D28517A32FED917A5777EBB185E2E90B22AA201C23D95",
+    "capsule_id": "keccak256(notional)"
+  },
+  "covenant": [
+    "Timestamp → Log → Seal → Archive → Reinject",
+    "Recurring revenue",
+    "Hyper-scalability",
+    "Founder sovereignty",
+    "MeshCredit integrity"
+  ]
+}
