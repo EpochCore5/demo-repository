@@ -18,3 +18,13 @@
   "bundle_sha256": "4c70ee3fdb515dfba01dc7882b19725870a5dd29c65139f3295797c0860a291c",
   "seal": "6c6bb081b623465d893b230c9508216dde2dfb46feab9f9557ccd59d36b6df73"
 }
+{
+  "ts": "2025-09-05T02:38:34Z",
+  "event": "agent_created",
+  "agent_id": "final_test",
+  "manifest": "/home/runner/work/demo-repository/demo-repository/agents/manifests/final_test_manifest.json",
+  "bundle_zip": "/home/runner/work/demo-repository/demo-repository/bundles/final_test_bundle.zip",
+  "manifest_sha256": "ead06e288f5010dc9f189a1d0202dbfaf9a1a9d0ee638b55c46461ba0667f0fb",
+  "bundle_sha256": "9de9ab161f876f5fba3e7ed047a1069e4ac104e04c8d81ebb4a8d49ea9bb48f9",
+  "seal": "f4ac4441f2d43950bb745f5d072203cc249b6fe117970ab973e371f36cffea29"
+}

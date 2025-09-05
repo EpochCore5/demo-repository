@@ -145,8 +145,8 @@
     "activity_log": "/reports/final_test_log.jsonl"
   },
   "ledger": {
-    "capsule_id": "keccak256(manifest.json)",
-    "seal_hash": "sha256(final_test_bundle.zip)",
+    "capsule_id": "keccak256(notional)",
+    "seal_hash": "9de9ab161f876f5fba3e7ed047a1069e4ac104e04c8d81ebb4a8d49ea9bb48f9",
     "last_verified": "2025-09-05T02:38:18Z"
   },
   "covenant": [
