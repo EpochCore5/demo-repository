@@ -317,20 +317,18 @@ if(-not (Test-Path $PrTemplatePath)){
     @"
 ## Summary
 - [ ] Linked issue(s)
-- [ ] Code review completed
-- [ ] Tests passing
-- [ ] Documentation updated
+- [ ] Governance checks pass (CI, code scanning, secrets scan)
 
-## Agent Management
+## Checklist
+- [ ] Tests added/updated
+- [ ] Docs updated (CHANGELOG, README)
+- [ ] No secrets/PII committed
+- [ ] Code review completed
+
+## Agent Management (if applicable)
 - [ ] Agent configurations validated
 - [ ] Security review completed
 - [ ] Audit trail verified
-
-## Governance Checklist
-- [ ] CODEOWNERS approval required
-- [ ] No secrets in commit
-- [ ] Compliance requirements met
-- [ ] Change log updated
 
 ## Testing
 - [ ] Unit tests pass
