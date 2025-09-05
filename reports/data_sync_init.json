@@ -1,0 +1,33 @@
+{
+  "ts": "2025-09-05T02:35:35Z",
+  "agent_id": "data_sync",
+  "event": "agent_init",
+  "role": "CRM Integration Specialist",
+  "name": "Data Synchronizer",
+  "integrations": [
+    "payments",
+    "analytics",
+    "crm",
+    "email",
+    "chat_support",
+    "social",
+    "devops_infra",
+    "data",
+    "ecomm",
+    "governance",
+    "content_marketing"
+  ],
+  "meshy_triggers": [
+    "FIVE_AND_GO",
+    "LEDGER_ECHO",
+    "G4_FUEL[5]",
+    "FOREST_BRIDGE",
+    "CANOPY_LOCK",
+    "ROOT_OF_ROOTS",
+    "EMOTIONAL_GRAVITY",
+    "SURGE_SPIKE",
+    "GAMMA_SQUEEZE",
+    "STACKED_GEO_BURSTS"
+  ],
+  "glyph_preview": "✜🜄☲✧⬟♓✭✯☊✷"
+}

@@ -1,0 +1,13 @@
+name: governance
+on: [push, pull_request]
+jobs:
+  scan-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Secret scan (git-secrets placeholder)
+        run: |
+          echo "Run your secret scanning tool here"
+      - name: PowerShell lint (PSScriptAnalyzer)
+        uses: PowerShell/psscriptanalyzer-action@v1.0
+        with: { }

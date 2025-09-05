@@ -1,0 +1,38 @@
+**********************
+PowerShell transcript start
+Start time: 20250905023818
+Username: pkrvm7jw40e0xgp\runner
+RunAs User: pkrvm7jw40e0xgp\runner
+Configuration Name: 
+Machine: pkrvm7jw40e0xgp (Unix 6.11.0.1018)
+Host Application: /opt/microsoft/powershell/7/pwsh.dll -Command ./add_agent.ps1 -AgentId 'final_test' -AgentName 'Final Test Agent' -Role 'Validation Specialist' -Transcript -TranscriptPath './reports/final_test_transcript.txt'
+Process ID: 3820
+PSVersion: 7.4.11
+PSEdition: Core
+GitCommitId: 7.4.11
+OS: Ubuntu 24.04.3 LTS
+Platform: Unix
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+
+✅ Agent created & sealed
+   ID:        final_test
+   Name:      Final Test Agent
+   Role:      Validation Specialist
+   Manifest:  /home/runner/work/demo-repository/demo-repository/agents/manifests/final_test_manifest.json
+   Glyph:     /home/runner/work/demo-repository/demo-repository/assets/glyphs/final_test.txt
+   Bundle:    /home/runner/work/demo-repository/demo-repository/bundles/final_test_bundle.zip
+   SHA256(bundle): 9de9ab161f876f5fba3e7ed047a1069e4ac104e04c8d81ebb4a8d49ea9bb48f9
+
+📒 Roster:    /home/runner/work/demo-repository/demo-repository/agents/roster.json
+🧾 Ledger:    /home/runner/work/demo-repository/demo-repository/ledger/ledger_main.jsonl
+
+⚡ Triggers armed: FIVE_AND_GO, LEDGER_ECHO, G4_FUEL[5], FOREST_BRIDGE, CANOPY_LOCK, ROOT_OF_ROOTS, EMOTIONAL_GRAVITY, SURGE_SPIKE, GAMMA_SQUEEZE, STACKED_GEO_BURSTS
+🏛️ Covenant:   Timestamp → Log → Seal → Archive → Reinject
+**********************
+PowerShell transcript end
+End time: 20250905023834
+**********************

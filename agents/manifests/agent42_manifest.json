@@ -1,0 +1,159 @@
+{
+  "agent_id": "agent42",
+  "name": "Revenue Amplifier",
+  "role": "Sales Funnel Commander",
+  "status": "active",
+  "integrations": {
+    "payments": [
+      "Stripe",
+      "PayPal",
+      "LemonSqueezy",
+      "Paddle",
+      "Square",
+      "Coinbase Commerce"
+    ],
+    "analytics": [
+      "GA4",
+      "PostHog",
+      "Mixpanel",
+      "Amplitude",
+      "Segment",
+      "Heap",
+      "Plausible",
+      "Matomo",
+      "Hotjar",
+      "FullStory"
+    ],
+    "crm": [
+      "HubSpot",
+      "Salesforce",
+      "Pipedrive",
+      "Zoho",
+      "Monday CRM",
+      "Notion CRM",
+      "Close",
+      "Freshsales",
+      "Copper",
+      "Keap"
+    ],
+    "email": [
+      "Mailchimp",
+      "ConvertKit",
+      "SendGrid",
+      "Klaviyo",
+      "Amazon SES",
+      "Mailgun",
+      "Postmark",
+      "Campaign Monitor",
+      "Brevo",
+      "Customer.io"
+    ],
+    "chat_support": [
+      "Intercom",
+      "Drift",
+      "Crisp",
+      "Zendesk",
+      "HelpScout",
+      "Freshdesk",
+      "LiveChat",
+      "Tidio",
+      "Olark",
+      "HubSpot Chat"
+    ],
+    "social": [
+      "Twitter API",
+      "LinkedIn API",
+      "Reddit API",
+      "Facebook Graph",
+      "Instagram Graph",
+      "TikTok API",
+      "YouTube Data",
+      "Discord Bot",
+      "Slack App",
+      "Telegram Bot"
+    ],
+    "devops_infra": [
+      "GitHub Actions",
+      "GitLab CI",
+      "CircleCI",
+      "ArgoCD",
+      "Terraform",
+      "Ansible",
+      "Sentry",
+      "Datadog",
+      "Vercel",
+      "Netlify",
+      "Fly.io",
+      "DigitalOcean",
+      "AWS Lambda",
+      "Cloud Run"
+    ],
+    "data": [
+      "BigQuery",
+      "Snowflake",
+      "Redshift",
+      "ClickHouse",
+      "Airbyte",
+      "Fivetran",
+      "dbt",
+      "Metabase",
+      "Superset",
+      "Delta Lake"
+    ],
+    "ecomm": [
+      "Shopify",
+      "WooCommerce",
+      "BigCommerce",
+      "Gumroad",
+      "LemonSqueezy Store"
+    ],
+    "governance": [
+      "Multisig Vaults",
+      "On-chain Registry (recordSeal)",
+      "Capsule Ledger JSONL",
+      "Timelocks"
+    ],
+    "content_marketing": [
+      "SEO Engine",
+      "Ads Automation (Google/FB/TikTok)",
+      "Content Pipeline",
+      "Viral Amplification"
+    ]
+  },
+  "meshy_triggers": [
+    "FIVE_AND_GO",
+    "LEDGER_ECHO",
+    "G4_FUEL[5]",
+    "FOREST_BRIDGE",
+    "CANOPY_LOCK",
+    "ROOT_OF_ROOTS",
+    "EMOTIONAL_GRAVITY",
+    "SURGE_SPIKE",
+    "GAMMA_SQUEEZE",
+    "STACKED_GEO_BURSTS"
+  ],
+  "glyph": {
+    "core": "☋⬣♏�\n�✩♄☋\n♊⬣♋⬠\n♇◇◇✚🜂✛",
+    "mesh": "✮☽♍⬣☷♁🜄⬟☲✙",
+    "files": {
+      "md": "/home/runner/work/demo-repository/demo-repository/assets/glyphs/agent42.md",
+      "txt": "/home/runner/work/demo-repository/demo-repository/assets/glyphs/agent42.txt"
+    }
+  },
+  "reports": {
+    "activity_log": "/reports/agent42_log.jsonl",
+    "init_report": "/reports/agent42_init.json"
+  },
+  "ledger": {
+    "last_verified": "2025-09-05T02:33:20Z",
+    "capsule_id": "keccak256(notional)",
+    "seal_hash": "035735b13aa97227b30541940ceb54ad3cf5a0c8aaa750ba8c16b0bbf24a6a26"
+  },
+  "covenant": [
+    "Timestamp → Log → Seal → Archive → Reinject",
+    "Recurring revenue",
+    "Hyper-scalability",
+    "Founder sovereignty",
+    "MeshCredit integrity"
+  ]
+}
