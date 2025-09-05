@@ -1,0 +1,39 @@
+{
+  "agent_id": "oscillation_conflict_agent",
+  "agent_version": "1.0.0",
+  "agent_type": "conflict_resolution",
+  "governance_compliant": true,
+  "ethical_standards": [
+    "transparency",
+    "accountability",
+    "safety",
+    "fairness"
+  ],
+  "capabilities": [
+    "dependency_conflict_resolution",
+    "merge_conflict_resolution",
+    "resource_conflict_resolution",
+    "logic_conflict_resolution",
+    "temporal_conflict_resolution"
+  ],
+  "executions": 1,
+  "conflicts_resolved": 4,
+  "execution_history": [
+    {
+      "execution_id": "exec_7be867039f90",
+      "timestamp": "2025-09-05T08:00:16.010649",
+      "target": "system",
+      "conflicts_detected": 4,
+      "conflicts_resolved": 4,
+      "efficiency_multiplier": 113.3
+    }
+  ],
+  "last_execution": {
+    "execution_id": "exec_7be867039f90",
+    "timestamp": "2025-09-05T08:00:16.010649",
+    "target": "system",
+    "conflicts_detected": 4,
+    "conflicts_resolved": 4,
+    "efficiency_multiplier": 113.3
+  }
+}

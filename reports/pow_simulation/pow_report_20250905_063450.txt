@@ -1,0 +1,74 @@
+SHA-256 PROOF OF WORK SIMULATION REPORT
+================================================================================
+
+Simulation Parameters:
+  - Number of Blocks per Difficulty: 3
+  - Difficulty Levels: [1, 2, 3, 4, 5]
+  - Timestamp: 2025-09-05 06:34:50
+
+Summary Results:
+  Difficulty 1 (leading zeros):
+    - Average Attempts: 8.00
+    - Average Time: 0.0000 seconds
+    - Theoretical Attempts: 16 (16^1)
+    - Actual/Theoretical Ratio: 0.5000
+
+  Difficulty 2 (leading zeros):
+    - Average Attempts: 639.67
+    - Average Time: 0.0007 seconds
+    - Theoretical Attempts: 256 (16^2)
+    - Actual/Theoretical Ratio: 2.4987
+
+  Difficulty 3 (leading zeros):
+    - Average Attempts: 5537.00
+    - Average Time: 0.0068 seconds
+    - Theoretical Attempts: 4096 (16^3)
+    - Actual/Theoretical Ratio: 1.3518
+
+  Difficulty 4 (leading zeros):
+    - Average Attempts: 74170.00
+    - Average Time: 0.0842 seconds
+    - Theoretical Attempts: 65536 (16^4)
+    - Actual/Theoretical Ratio: 1.1317
+
+  Difficulty 5 (leading zeros):
+    - Average Attempts: 427761.00
+    - Average Time: 0.4904 seconds
+    - Theoretical Attempts: 1048576 (16^5)
+    - Actual/Theoretical Ratio: 0.4079
+
+Security Analysis:
+  - Computation Requirements:
+    * Difficulty 1: 8.00 hashes (0.0000 seconds on this machine)
+    * Difficulty 2: 639.67 hashes (0.0007 seconds on this machine)
+    * Difficulty 3: 5537.00 hashes (0.0068 seconds on this machine)
+    * Difficulty 4: 74170.00 hashes (0.0842 seconds on this machine)
+    * Difficulty 5: 427761.00 hashes (0.4904 seconds on this machine)
+
+  - Scaling Properties:
+    * Increasing difficulty from 1 to 2 increased attempts by factor of 79.96 (expected: 16)
+    * Increasing difficulty from 2 to 3 increased attempts by factor of 8.66 (expected: 16)
+    * Increasing difficulty from 3 to 4 increased attempts by factor of 13.40 (expected: 16)
+    * Increasing difficulty from 4 to 5 increased attempts by factor of 5.77 (expected: 16)
+
+  - Implications:
+    * Each additional zero in the difficulty increases work by ~16x
+    * Difficulty can be precisely adjusted to control block timing
+    * Security scales with computational power of the network
+    * 51% attack requires majority of computational power
+
+Consensus Implications:
+  - Decentralization: No central authority needed for consensus
+  - Sybil Resistance: Creating false identities doesn't help without computational power
+  - Economic Security: Attack cost scales with network computational power
+  - Immutability: Changing past records requires redoing all proof of work
+
+Computational Scaling:
+  - At difficulty 5, average of 427761.00 hashes required
+  - Each +1 difficulty increases by factor of ~16
+  - Estimated hashes for difficulty 8: 1.10e+08
+  - Estimated hashes for difficulty 10: 2.80e+10
+  - Estimated hashes for difficulty 12: 7.18e+12
+
+================================================================================
+End of Simulation Report

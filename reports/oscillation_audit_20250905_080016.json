@@ -1,0 +1,5965 @@
+{
+  "engine_config": {
+    "base_frequency": 100.0,
+    "max_frequency": 10000.0,
+    "max_cycles": 1000,
+    "convergence_threshold": 0.001
+  },
+  "execution_summary": {
+    "start_time": "2025-09-05T08:00:15.987725",
+    "end_time": "2025-09-05T08:00:16.000411",
+    "conflicts_detected": 4,
+    "conflicts_resolved": 4,
+    "cycles_completed": 101
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2025-09-05T08:00:15.987788",
+      "event_type": "engine_start",
+      "details": {
+        "target": "system"
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.997950",
+      "event_type": "scan_complete",
+      "details": {
+        "frequency": 100.0,
+        "conflicts_found": 4
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998032",
+      "event_type": "conflicts_detected",
+      "details": {
+        "count": 4
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998048",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 1,
+        "new_frequency": 2083.96,
+        "cycle_factor": 0.001,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998066",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 1,
+        "success": false,
+        "success_probability": 0.24
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998078",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 1,
+        "success": false,
+        "success_probability": 0.24
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998088",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 1,
+        "success": false,
+        "success_probability": 0.24
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998098",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 1,
+        "success": false,
+        "success_probability": 0.36000000000000004
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998107",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 2,
+        "new_frequency": 2087.92,
+        "cycle_factor": 0.002,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998118",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 2,
+        "success": false,
+        "success_probability": 0.45
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998152",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 2,
+        "success": false,
+        "success_probability": 0.45
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998162",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 2,
+        "success": false,
+        "success_probability": 0.45
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998171",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 2,
+        "success": false,
+        "success_probability": 0.4
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998179",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 3,
+        "new_frequency": 2091.88,
+        "cycle_factor": 0.003,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998185",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 3,
+        "success": false,
+        "success_probability": 0.4800000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998189",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 3,
+        "success": false,
+        "success_probability": 0.4800000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998194",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 3,
+        "success": false,
+        "success_probability": 0.4800000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998199",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 3,
+        "success": false,
+        "success_probability": 0.42000000000000004
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998202",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 4,
+        "new_frequency": 2095.84,
+        "cycle_factor": 0.004,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998208",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 4,
+        "success": false,
+        "success_probability": 0.48999999999999994
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998212",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 4,
+        "success": false,
+        "success_probability": 0.48999999999999994
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998217",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 4,
+        "success": false,
+        "success_probability": 0.48999999999999994
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998222",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 4,
+        "success": false,
+        "success_probability": 0.42
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998226",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 5,
+        "new_frequency": 2099.8,
+        "cycle_factor": 0.005,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998231",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 5,
+        "success": false,
+        "success_probability": 0.48
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998236",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 5,
+        "success": false,
+        "success_probability": 0.48
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998241",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 5,
+        "success": false,
+        "success_probability": 0.48
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998245",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 5,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998249",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 6,
+        "new_frequency": 2103.76,
+        "cycle_factor": 0.006,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998254",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 6,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998258",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 6,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998271",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 6,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998275",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 6,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998278",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 7,
+        "new_frequency": 2107.7200000000003,
+        "cycle_factor": 0.007,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998284",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 7,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998288",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 7,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998292",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 7,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998296",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 7,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998299",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 8,
+        "new_frequency": 2111.6800000000003,
+        "cycle_factor": 0.008,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998305",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 8,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998308",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 8,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998312",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 8,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998317",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 8,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998320",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 9,
+        "new_frequency": 2115.6400000000003,
+        "cycle_factor": 0.009,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998323",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 9,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998327",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 9,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998330",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 9,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998333",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 9,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998336",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 10,
+        "new_frequency": 2119.6000000000004,
+        "cycle_factor": 0.01,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998339",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 10,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998342",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 10,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998345",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 10,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998349",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 10,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998353",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 11,
+        "new_frequency": 2123.56,
+        "cycle_factor": 0.011,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998357",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 11,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998360",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 11,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998363",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 11,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998366",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 11,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998371",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 12,
+        "new_frequency": 2127.5200000000004,
+        "cycle_factor": 0.012,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998375",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 12,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998378",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 12,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998381",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 12,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998384",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 12,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998387",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 13,
+        "new_frequency": 2131.4800000000005,
+        "cycle_factor": 0.013,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998391",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 13,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998394",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 13,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998397",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 13,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998400",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 13,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998403",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 14,
+        "new_frequency": 2135.44,
+        "cycle_factor": 0.014,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998406",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 14,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998409",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 14,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998412",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 14,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998415",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 14,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998418",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 15,
+        "new_frequency": 2139.4,
+        "cycle_factor": 0.015,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998425",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 15,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998428",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 15,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998431",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 15,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998435",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 15,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998437",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 16,
+        "new_frequency": 2143.3599999999997,
+        "cycle_factor": 0.016,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998441",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 16,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998444",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 16,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998447",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 16,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998450",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 16,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998454",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 17,
+        "new_frequency": 2147.32,
+        "cycle_factor": 0.017,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998457",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 17,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998460",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 17,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998464",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 17,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998467",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 17,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998469",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 18,
+        "new_frequency": 2151.28,
+        "cycle_factor": 0.018,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998474",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 18,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998477",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 18,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998480",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 18,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998483",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 18,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998486",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 19,
+        "new_frequency": 2155.2400000000002,
+        "cycle_factor": 0.019,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998489",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 19,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998492",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 19,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998495",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 19,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998503",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 19,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998506",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 20,
+        "new_frequency": 2159.2000000000003,
+        "cycle_factor": 0.02,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998509",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 20,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998512",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 20,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998618",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 20,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998623",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 20,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998626",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 21,
+        "new_frequency": 2163.16,
+        "cycle_factor": 0.021,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998630",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 21,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998633",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 21,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998636",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 21,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998643",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 21,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998646",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 22,
+        "new_frequency": 2167.1200000000003,
+        "cycle_factor": 0.022,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998650",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 22,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998655",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 22,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998659",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 22,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998662",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 22,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998665",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 23,
+        "new_frequency": 2171.08,
+        "cycle_factor": 0.023,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998668",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 23,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998673",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 23,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998676",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 23,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998679",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 23,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998682",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 24,
+        "new_frequency": 2175.04,
+        "cycle_factor": 0.024,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998685",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 24,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998688",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 24,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998691",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 24,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998695",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 24,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998697",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 25,
+        "new_frequency": 2179.0,
+        "cycle_factor": 0.025,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998702",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 25,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998705",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 25,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998709",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 25,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998712",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 25,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998714",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 26,
+        "new_frequency": 2182.96,
+        "cycle_factor": 0.026,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998717",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 26,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998720",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 26,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998723",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 26,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998726",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 26,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998729",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 27,
+        "new_frequency": 2186.92,
+        "cycle_factor": 0.027,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998732",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 27,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998735",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 27,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998738",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 27,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998743",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 27,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998745",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 28,
+        "new_frequency": 2190.88,
+        "cycle_factor": 0.028,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998751",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 28,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998756",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 28,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998759",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 28,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998762",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 28,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998765",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 29,
+        "new_frequency": 2194.84,
+        "cycle_factor": 0.029,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998768",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 29,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998771",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 29,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998774",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 29,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998779",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 29,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998782",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 30,
+        "new_frequency": 2198.8,
+        "cycle_factor": 0.03,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998786",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 30,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998789",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 30,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998792",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 30,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998795",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 30,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998797",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 31,
+        "new_frequency": 2202.76,
+        "cycle_factor": 0.031,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998800",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 31,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998804",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 31,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998807",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 31,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998810",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 31,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998812",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 32,
+        "new_frequency": 2206.7200000000003,
+        "cycle_factor": 0.032,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998815",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 32,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998818",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 32,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998822",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 32,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998825",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 32,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998829",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 33,
+        "new_frequency": 2210.68,
+        "cycle_factor": 0.033,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998832",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 33,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998835",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 33,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998838",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 33,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998841",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 33,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998844",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 34,
+        "new_frequency": 2214.6400000000003,
+        "cycle_factor": 0.034,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998847",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 34,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998850",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 34,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998855",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 34,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998860",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 34,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998862",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 35,
+        "new_frequency": 2218.6000000000004,
+        "cycle_factor": 0.035,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998866",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 35,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998869",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 35,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998872",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 35,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998875",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 35,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998877",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 36,
+        "new_frequency": 2222.56,
+        "cycle_factor": 0.036,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998881",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 36,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998884",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 36,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998887",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 36,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998890",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 36,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998892",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 37,
+        "new_frequency": 2226.52,
+        "cycle_factor": 0.037,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998895",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 37,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998898",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 37,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998902",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 37,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998905",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 37,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998907",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 38,
+        "new_frequency": 2230.48,
+        "cycle_factor": 0.038,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998912",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 38,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998915",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 38,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998920",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 38,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998923",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 38,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998925",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 39,
+        "new_frequency": 2234.44,
+        "cycle_factor": 0.039,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998929",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 39,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998932",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 39,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998936",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 39,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998940",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 39,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998942",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 40,
+        "new_frequency": 2238.4,
+        "cycle_factor": 0.04,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998945",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 40,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998948",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 40,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998952",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 40,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998955",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 40,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998961",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 41,
+        "new_frequency": 2242.36,
+        "cycle_factor": 0.041,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998964",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 41,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998967",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 41,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998971",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 41,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998976",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 41,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998978",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 42,
+        "new_frequency": 2246.32,
+        "cycle_factor": 0.042,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998982",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 42,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998985",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 42,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998988",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 42,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998991",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 42,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998994",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 43,
+        "new_frequency": 2250.28,
+        "cycle_factor": 0.043,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.998997",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 43,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999000",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 43,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999005",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 43,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999008",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 43,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999010",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 44,
+        "new_frequency": 2254.2400000000002,
+        "cycle_factor": 0.044,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999014",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 44,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999017",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 44,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999022",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 44,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999025",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 44,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999027",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 45,
+        "new_frequency": 2258.2,
+        "cycle_factor": 0.045,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999031",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 45,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999034",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 45,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999037",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 45,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999040",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 45,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999042",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 46,
+        "new_frequency": 2262.1600000000003,
+        "cycle_factor": 0.046,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999045",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 46,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999049",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 46,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999052",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 46,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999055",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 46,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999057",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 47,
+        "new_frequency": 2266.1200000000003,
+        "cycle_factor": 0.047,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999060",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 47,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999065",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 47,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999069",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 47,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999072",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 47,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999074",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 48,
+        "new_frequency": 2270.08,
+        "cycle_factor": 0.048,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999077",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 48,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999080",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 48,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999084",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 48,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999087",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 48,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999091",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 49,
+        "new_frequency": 2274.04,
+        "cycle_factor": 0.049,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999097",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 49,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999101",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 49,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999105",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 49,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999108",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 49,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999110",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 50,
+        "new_frequency": 2278.0000000000005,
+        "cycle_factor": 0.05,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999113",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 50,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999116",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 50,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999119",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 50,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999146",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 50,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999151",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 51,
+        "new_frequency": 2281.96,
+        "cycle_factor": 0.051,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999155",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 51,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999158",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 51,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999161",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 51,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999164",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 51,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999167",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 52,
+        "new_frequency": 2285.92,
+        "cycle_factor": 0.052,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999170",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 52,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999173",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 52,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999176",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 52,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999180",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 52,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999182",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 53,
+        "new_frequency": 2289.88,
+        "cycle_factor": 0.053,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999185",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 53,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999188",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 53,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999194",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 53,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999197",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 53,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999200",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 54,
+        "new_frequency": 2293.84,
+        "cycle_factor": 0.054,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999206",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 54,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999211",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 54,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999214",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 54,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999217",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 54,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999219",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 55,
+        "new_frequency": 2297.8,
+        "cycle_factor": 0.055,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999223",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 55,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999226",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 55,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999229",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 55,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999232",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 55,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999234",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 56,
+        "new_frequency": 2301.76,
+        "cycle_factor": 0.056,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999237",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 56,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999241",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 56,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999244",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 56,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999247",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 56,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999249",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 57,
+        "new_frequency": 2305.72,
+        "cycle_factor": 0.057,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999252",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 57,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999255",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 57,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999258",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 57,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999262",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 57,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999264",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 58,
+        "new_frequency": 2309.6800000000003,
+        "cycle_factor": 0.058,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999267",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 58,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999270",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 58,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999273",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 58,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999276",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 58,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999279",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 59,
+        "new_frequency": 2313.6400000000003,
+        "cycle_factor": 0.059,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999285",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 59,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999291",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 59,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999294",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 59,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999297",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 59,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999305",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 60,
+        "new_frequency": 2317.6,
+        "cycle_factor": 0.06,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999309",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 60,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999312",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 60,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999315",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 60,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999318",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 60,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999320",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 61,
+        "new_frequency": 2321.56,
+        "cycle_factor": 0.061,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999323",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 61,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999327",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 61,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999330",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 61,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999333",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 61,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999335",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 62,
+        "new_frequency": 2325.52,
+        "cycle_factor": 0.062,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999339",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 62,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999342",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 62,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999345",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 62,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999348",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 62,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999350",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 63,
+        "new_frequency": 2329.48,
+        "cycle_factor": 0.063,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999353",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 63,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999356",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 63,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999359",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 63,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999362",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 63,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999365",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 64,
+        "new_frequency": 2333.44,
+        "cycle_factor": 0.064,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999370",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 64,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999373",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 64,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999376",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 64,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999381",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 64,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999384",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 65,
+        "new_frequency": 2337.4,
+        "cycle_factor": 0.065,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999387",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 65,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999390",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 65,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999393",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 65,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999396",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 65,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999398",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 66,
+        "new_frequency": 2341.36,
+        "cycle_factor": 0.066,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999401",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 66,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999406",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 66,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999409",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 66,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999412",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 66,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999415",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 67,
+        "new_frequency": 2345.32,
+        "cycle_factor": 0.067,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999418",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 67,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999421",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 67,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999424",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 67,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999427",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 67,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999430",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 68,
+        "new_frequency": 2349.28,
+        "cycle_factor": 0.068,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999433",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 68,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999436",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 68,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999439",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 68,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999444",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 68,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999447",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 69,
+        "new_frequency": 2353.2400000000002,
+        "cycle_factor": 0.069,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999452",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 69,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999455",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 69,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999458",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 69,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999461",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 69,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999465",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 70,
+        "new_frequency": 2357.2000000000003,
+        "cycle_factor": 0.07,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999469",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 70,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999472",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 70,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999475",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 70,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999478",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 70,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999481",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 71,
+        "new_frequency": 2361.1600000000003,
+        "cycle_factor": 0.071,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999484",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 71,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999487",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 71,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999490",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 71,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999493",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 71,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999495",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 72,
+        "new_frequency": 2365.12,
+        "cycle_factor": 0.072,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999499",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 72,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999502",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 72,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999505",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 72,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999510",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 72,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999512",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 73,
+        "new_frequency": 2369.08,
+        "cycle_factor": 0.073,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999516",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 73,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999519",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 73,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999522",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 73,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999527",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 73,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999529",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 74,
+        "new_frequency": 2373.0400000000004,
+        "cycle_factor": 0.074,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999532",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 74,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999535",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 74,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999538",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 74,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999542",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 74,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999544",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 75,
+        "new_frequency": 2377.0,
+        "cycle_factor": 0.075,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999547",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 75,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999552",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 75,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999555",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 75,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999558",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 75,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999561",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 76,
+        "new_frequency": 2380.96,
+        "cycle_factor": 0.076,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999564",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 76,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999567",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 76,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999570",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 76,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999573",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 76,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999576",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 77,
+        "new_frequency": 2384.92,
+        "cycle_factor": 0.077,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999579",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 77,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999582",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 77,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999585",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 77,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999588",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 77,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999590",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 78,
+        "new_frequency": 2388.88,
+        "cycle_factor": 0.078,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999596",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 78,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999599",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 78,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999604",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 78,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999607",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 78,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999609",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 79,
+        "new_frequency": 2392.84,
+        "cycle_factor": 0.079,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999614",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 79,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999619",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 79,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999622",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 79,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999626",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 79,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999628",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 80,
+        "new_frequency": 2396.8,
+        "cycle_factor": 0.08,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999631",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 80,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999634",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 80,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999639",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 80,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999642",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 80,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999645",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 81,
+        "new_frequency": 2400.76,
+        "cycle_factor": 0.081,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999648",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 81,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999651",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 81,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999654",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 81,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999657",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 81,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999659",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 82,
+        "new_frequency": 2404.7200000000003,
+        "cycle_factor": 0.082,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999663",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 82,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999666",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 82,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999669",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 82,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999672",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 82,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999674",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 83,
+        "new_frequency": 2408.6800000000003,
+        "cycle_factor": 0.083,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999677",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 83,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999680",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 83,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999687",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 83,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999690",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 83,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999692",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 84,
+        "new_frequency": 2412.6400000000003,
+        "cycle_factor": 0.084,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999696",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 84,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999699",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 84,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999702",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 84,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999705",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 84,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999707",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 85,
+        "new_frequency": 2416.6,
+        "cycle_factor": 0.085,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999711",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 85,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999714",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 85,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999719",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 85,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999722",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 85,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999726",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 86,
+        "new_frequency": 2420.56,
+        "cycle_factor": 0.086,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999729",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 86,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999732",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 86,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999735",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 86,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999738",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 86,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999740",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 87,
+        "new_frequency": 2424.52,
+        "cycle_factor": 0.087,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999744",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 87,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999747",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 87,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999750",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 87,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999753",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 87,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999755",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 88,
+        "new_frequency": 2428.48,
+        "cycle_factor": 0.088,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999758",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 88,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999763",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 88,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999766",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 88,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999769",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 88,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999772",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 89,
+        "new_frequency": 2432.44,
+        "cycle_factor": 0.089,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999775",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 89,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999778",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 89,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999781",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 89,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999786",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 89,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999789",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 90,
+        "new_frequency": 2436.4,
+        "cycle_factor": 0.09,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999792",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 90,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999795",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 90,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999798",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 90,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999813",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 90,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999816",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 91,
+        "new_frequency": 2440.36,
+        "cycle_factor": 0.091,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999821",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 91,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999824",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 91,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999827",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 91,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999831",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 91,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999835",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 92,
+        "new_frequency": 2444.32,
+        "cycle_factor": 0.092,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999838",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 92,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999841",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 92,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999844",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 92,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999847",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 92,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999850",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 93,
+        "new_frequency": 2448.28,
+        "cycle_factor": 0.093,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999853",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 93,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999858",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 93,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999862",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 93,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999865",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 93,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999867",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 94,
+        "new_frequency": 2452.2400000000002,
+        "cycle_factor": 0.094,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999870",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 94,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999873",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 94,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999876",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 94,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999879",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 94,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999881",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 95,
+        "new_frequency": 2456.2000000000003,
+        "cycle_factor": 0.095,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999885",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 95,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999888",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 95,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999891",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 95,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999894",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 95,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999896",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 96,
+        "new_frequency": 2460.16,
+        "cycle_factor": 0.096,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999901",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 96,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999904",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 96,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999910",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 96,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999913",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 96,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999915",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 97,
+        "new_frequency": 2464.1200000000003,
+        "cycle_factor": 0.097,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999919",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 97,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999922",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 97,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999925",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 97,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999928",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 97,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999930",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 98,
+        "new_frequency": 2468.0800000000004,
+        "cycle_factor": 0.098,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999935",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 98,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999940",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 98,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999944",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 98,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999947",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 98,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999949",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 99,
+        "new_frequency": 2472.04,
+        "cycle_factor": 0.099,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999952",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 99,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999955",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_DOWNGRADE",
+        "cycle": 99,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999958",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "PRIORITY_ALLOCATION",
+        "cycle": 99,
+        "success": false,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999963",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "DEADLOCK_PREVENTION",
+        "cycle": 99,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999966",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 100,
+        "new_frequency": 2476.0,
+        "cycle_factor": 0.1,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999969",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 100,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999972",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "DEPENDENCY_ISOLATION",
+        "cycle": 100,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999975",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "DEFERRED_EXECUTION",
+        "cycle": 100,
+        "success": false,
+        "success_probability": 0.63
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999978",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "RACE_CONDITION_ELIMINATION",
+        "cycle": 100,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999981",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 101,
+        "new_frequency": 2479.96,
+        "cycle_factor": 0.101,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999984",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 101,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999987",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "CIRCULAR_BREAK",
+        "cycle": 101,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999990",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_POOLING",
+        "cycle": 101,
+        "success": false,
+        "success_probability": 0.54
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999995",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "LOCK_OPTIMIZATION",
+        "cycle": 101,
+        "success": false,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:15.999998",
+      "event_type": "frequency_adjustment",
+      "details": {
+        "cycle": 102,
+        "new_frequency": 2483.92,
+        "cycle_factor": 0.102,
+        "resolution_factor": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:16.000001",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_0_1a414a32",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 102,
+        "success": true,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:16.000069",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "dependency_1_4c70c232",
+        "conflict_type": "DEPENDENCY",
+        "strategy": "VERSION_UPGRADE",
+        "cycle": 102,
+        "success": true,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:16.000155",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "resource_0_5ae496de",
+        "conflict_type": "RESOURCE",
+        "strategy": "RESOURCE_THROTTLING",
+        "cycle": 102,
+        "success": true,
+        "success_probability": 0.81
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:16.000231",
+      "event_type": "resolution_attempt",
+      "details": {
+        "conflict_id": "temporal_0_c42c34e6",
+        "conflict_type": "TEMPORAL",
+        "strategy": "SYNCHRONIZATION_BARRIER",
+        "cycle": 102,
+        "success": true,
+        "success_probability": 0.7200000000000001
+      }
+    },
+    {
+      "timestamp": "2025-09-05T08:00:16.000489",
+      "event_type": "engine_stop",
+      "details": {
+        "execution_time": 0.012686,
+        "conflicts_resolved": 4,
+        "conflicts_detected": 4,
+        "cycles_completed": 101
+      }
+    }
+  ]
+}

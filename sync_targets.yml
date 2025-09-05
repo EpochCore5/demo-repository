@@ -1,0 +1,10 @@
+---
+# Sync targets configuration for EpochCoreMASTER Flash Sync Automation
+# This file defines the repositories that will be synchronized by the system
+
+repository:
+  - "EpochCore5/epoch-agent-platform"
+  - "EpochCore5/epoch-governance-framework"
+  - "EpochCore5/epoch-sync-manager"
+  - "EpochCore5/epoch-deployment-system"
+  - "EpochCore5/epoch-oscillation-system"
